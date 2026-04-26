@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: import.meta.env.VITE_API_URL || (window.location.hostname === 'localhost' ? 'http://localhost:3003/api' : '/api'),
+    baseURL: import.meta.env.VITE_API_URL || (window.location.hostname === 'localhost' ? 'https://minecraft.karaya.site/api' : '/api'),
 });
 
 // Interceptor to add auth token
